@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title of the Page -->
+    <title>Anukasif - Image Search App | Find High-Quality Images Instantly</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Anukasif's Image Search App allows you to search and find high-quality images from across the web. Fast and easy to use.">
+    <meta name="keywords" content="Image Search, Find Images, High Quality Images, Search Images, Free Image Search, Anukasif Image App">
+    <meta name="author" content="Anukasif">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags for better Social Media sharing -->
+    <meta property="og:title" content="Anukasif - Image Search App | Find Images Easily">
+    <meta property="og:description" content="Search and find the best images with Anukasif's Image Search App. Simple, fast, and high-quality images for all your needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="your-website-url-here">
+    <meta property="og:image" content="your-image-url-here">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anukasif - Image Search App">
+    <meta name="twitter:description" content="Search for high-quality images and find what you need in an instant with Anukasif's Image Search App.">
+    <meta name="twitter:image" content="your-image-url-here">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-pzjw8f+ua7Kw1TIq0D0vmVz+FLZLYtLJzT+YLq5a0pPjsd/6l17e15m5xWvVfVt0"
+      crossorigin="anonymous"
+    />
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+  <body>
+    <div class="container py-5">
+      <h1 class="text-center mb-4">Image Search App</h1>
+      <form class="d-flex justify-content-center mb-4">
+        <input
+          type="text"
+          id="search-input"
+          class="form-control mr-2"
+          placeholder="Search for images..."
+        />
+        <button id="search-button" class="btn btn-primary">Search</button>
+      </form>
+
+      <div class="search-results row">
+        <div class="col-md-4 col-sm-6 mb-4 search-result">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664361480561-3bdcd6eb3b6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60"
+            alt="image"
+            class="img-fluid"
+          />
+          <a
+            href="https://unsplash.com/photos/g-7X6T7vAI4"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="d-block mt-2"
+            >An image of a beach</a
+          >
+          <!-- Download Icon -->
+          <a
+            href="https://plus.unsplash.com/premium_photo-1664361480561-3bdcd6eb3b6f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1000&q=60"
+            download
+            class="d-block mt-2"
+            ><i class="fas fa-download download-icon"></i></a
+          >
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button id="show-more-button" class="btn btn-secondary">Show More</button>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4B6+3z5C4gQG9l5Aflqj8ETbF6g40U5M+VtDHE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-KJr3PjzYoFHhgKh1zG9b6EUEvJ9Aq+lgYw1zENz5EgvWReRtQXs59+mg4Hwr/vf9" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0D0vmVz+FLZLYtLJzT+YLq5a0pPjsd/6l17e15m5xWvVfVt0" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
