@@ -1,0 +1,476 @@
+@charset "UTF-8";
+body{
+  margin: 0;
+  padding: 0;
+}
+#menu{
+  display: none;
+}
+
+/* //////////////////// */
+.custom-slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.custom-slider .slide {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ////////////////////// */
+
+
+/* Add a fade-in effect to the slideshow */
+.skitter-large ul li {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .skitter {
+    max-width: 100%;
+  }
+}
+
+
+@media(min-width: 992px){
+  .desktop_menu{
+    display: block;
+  }
+  .slicknav_menu{
+    display: none;
+  }
+} */
+.desktop_menu{
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 5px 8px #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 10000;
+  /* display: flex;
+ justify-content: space-between;    ///// left list move in right side.... */
+}
+.list{
+  display: flex;
+  float: right;
+  
+}
+
+.desktop_menu li{
+  padding: 15px;
+}
+.desktop_menu li a{
+  text-decoration: none;
+  font-family: "Maven Pro", sans-serif;
+  color: #0008ff;
+  font-weight: 600;
+  font-size: 16px;
+}
+.desktop_menu li:hover{
+  background-color: #0008ff;
+}
+.desktop_menu li:hover a{
+  color: white;
+}
+.brand_name{
+  padding: 10px;
+  float: left;
+}
+.brand_name a{
+  color: #0008ff;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 600;
+}
+#project{
+  text-align: center;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 700;
+  color: #0008ff;
+}
+
+.my_project{
+  padding: 100px;
+  padding-right: 100px;
+  box-sizing: border-box;
+  margin-top: -70px;
+  margin-bottom: -30px;
+}
+/* Style for Logo images */
+/* Style for images */
+.icon {
+  width: 120px; /* Set the width */
+  height: 84px; /* Set the height */
+  object-fit: cover; /* Ensures image fits the dimensions */
+  display: inline-block; /* Useful for aligning multiple images */
+  margin: 5px; /* Optional margin for spacing */
+  border-radius: 20px;
+}
+
+
+/* ////////////////////////CDN Icon///////////////////////////// */
+/* Main Container */
+.about-section {
+  display: flex;
+  flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Subtle gradient background */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual Cards */
+.about-card {
+  background: linear-gradient(135deg, #ffffff, #e8e8e8);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(25% - 40px); /* Four cards in a row (desktop) */
+  min-width: 200px;
+  max-width: 300px;
+  transition: all 0.4s ease, background 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 152, 219, 0.1);
+  transform: scale(0);
+  transition: all 0.4s ease;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.about-card:hover::before {
+  transform: scale(1);
+}
+
+.about-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: linear-gradient(135deg, #e0f7fa, #80deea);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Icon */
+.about-icon {
+  font-size: 45px;
+  color: #3498db;
+  margin-bottom: 15px;
+  transition: color 0.4s ease;
+}
+
+.about-card:hover .about-icon {
+  color: #1abc9c;
+}
+
+/* Card Title */
+.about-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  transition: color 0.4s ease;
+}
+
+.about-card:hover .about-title {
+  color: #34495e;
+}
+
+/* Card Description */
+.about-desc {
+  font-size: 15px;
+  color: #7f8c8d;
+  line-height: 1.6;
+  transition: color 0.4s ease;
+}
+
+.about-card:hover .about-desc {
+  color: #95a5a6;
+}
+
+/* ////////////////////////////////My Skills//////////////////////////// */
+.row_two{
+  width: 100%;
+  /* border: 1px solid red; */
+}
+/* .col_left{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  float: left;
+  box-sizing: border-box;
+} */
+
+.col_left {
+  float: left; /* Image ko left align karna */
+  margin-left: 200px; /* Left se gap maintain karna */
+  margin-right: 150px; /* Image aur content ke beech gap dena */
+  /* margin-bottom: 100px; */
+}
+
+.image-container {
+  position: relative;
+  width: 400px; /* Fixed image width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px; /* Optional rounded corners */
+}
+
+.animated-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px; /* Match the border-radius of the image */
+  background: linear-gradient(90deg, #ff007c, #ffeb3b, #7c4dff, #00bcd4);
+  background-size: 400% 400%;
+  animation: borderAnimation 5s linear infinite;
+  z-index: -1;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+.col_right{
+  float: left;
+  width: 50%;
+  /* border: 1px solid green; */
+  box-sizing: border-box;
+  padding: 30px;
+}
+.col_right h2{
+  font-family: "Maven Pro", sans-serif;
+  text-align: center;
+}
+
+
+/* General Progress Box Styling */
+.progress_box {
+  width: 100%;
+  height: 25px;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* General Progress Bar Styling */
+.progress_bar {
+  height: 100%;
+  width: 0%; /* Initial Width */
+  border-radius: 5px;
+  transition: width 1s ease-in-out; /* Smooth Animation */
+  text-align: center;
+}
+.progress_bar span{
+  color: white;
+}
+.col_right label{
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 600;
+}
+
+/* HTML Progress */
+.html_progress {
+  background-color: #e44d26; /* Orange-Red */
+}
+
+/* CSS Progress */
+.css_progress {
+  background-color: #264de4; /* Blue */
+}
+
+/* JavaScript Progress */
+.js_progress {
+  background-color: #f7df1e; /* Yellow */
+}
+/* C Progress */
+.c_progress {
+  background-color: #4b09f2; /* Deep Blue */
+}
+/* C++ Progress */
+.cpp_progress {
+  background-color: #00599c; /* Deep Blue */
+}
+
+/* JQuery Progress */
+.jquery_progress {
+  background-color: #0769ad; /* Light Blue */
+}
+
+/* BootStrap Progress */
+.bootstrap_progress {
+  background-color: #563d7c; /* Purple */
+}
+
+
+/* Media Queries for Tablet//////////////////////////////////////////// */
+
+/* Default Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Media Queries */
+
+/* Large Screens (992px and above) */
+@media (min-width: 992px) {
+  .desktop_menu {
+    display: block;
+  }
+  .slicknav_menu {
+    display: none;
+  }
+}
+
+/* Tablets and Medium Screens (1024px and below) */
+@media (max-width: 1024px) {
+  .desktop_menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+
+  .col_left {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 45%;
+  }
+
+  .col_right {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .icon {
+    width: 100px; /* Adjust size for medium screens */
+    height: 70px;
+    margin: 4px;
+  }
+}
+
+/* Small Screens (768px and below) */
+@media (max-width: 768px) {
+  .col_left,
+  .col_right {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; /* Center content for smaller screens */
+  }
+
+  .image-container {
+    width: 90%; /* Scale down the image for smaller screens */
+    margin-left: 40px;
+  }
+
+  .icon {
+    width: 80px; /* Smaller icons */
+    height: 56px;
+    margin: 3px;
+  }
+
+  .about-card {
+    flex: 1 1 calc(50% - 40px); /* Two cards per row */
+  }
+}
+
+/* Very Small Screens (480px and below) */
+@media (max-width: 480px) {
+  .col_left {
+    margin-bottom: 20px; /* Add space between stacked content */
+  }
+
+  .image-container {
+    width: 90%; /* Full width for very small screens */
+    margin-left: 17px;
+  }
+
+  .col_right {
+    padding: 10px;
+  }
+
+  .progress_box {
+    height: 20px; /* Smaller height for progress bar */
+  }
+
+  .icon {
+    width: 60px; /* Smaller size for tiny screens */
+    height: 42px;
+    margin: 2px;
+    border-radius: 10px; /* Smaller radius for smaller icons */
+  }
+
+  .about-card {
+    flex: 1 1 100%; /* One card per row */
+  }
+}
