@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f3f4f6;
+}
+
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 50px;
+  border-top: 5px solid #4caf50;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 320px;
+  font-size: 16px;
+  color: #555;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  input, button {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  input {
+    max-width: 85%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.years {
+  color: #FF5733; /* Red color for years */
+  font-weight: bold;
+}
+
+.months {
+  color: #33C1FF; /* Blue color for months */
+  font-weight: bold;
+}
+
+.days {
+  color: #4CAF50; /* Green color for days */
+  font-weight: bold;
+}
