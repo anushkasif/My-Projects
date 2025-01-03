@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Page Title -->
+    <title>Anukasif - Smart Note App for Organized Life</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Organize your life with Anukasif's Smart Note App. A modern, responsive, and intuitive solution for managing tasks, ideas, and notes efficiently.">
+    <meta name="keywords" content="Anukasif, Note App, Smart Notes, Task Manager, Productivity Tools, Bootstrap Note App, Responsive Note Application, Custom Note Styles">
+    <meta name="author" content="Anukasif">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Anukasif - Smart Note App for Productivity">
+    <meta property="og:description" content="Streamline your workflow with Anukasif's Note App. Featuring a responsive design powered by Bootstrap and custom styling for an effortless experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="your-website-url-here">
+    <meta property="og:image" content="your-image-url-here">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anukasif - Note App for Efficient Task Management">
+    <meta name="twitter:description" content="Experience seamless note-taking with a modern interface and intuitive features.">
+    <meta name="twitter:image" content="your-image-url-here">
+    <link rel="icon" href="icon-192.png" sizes="1280x1280">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="manifest" href="manifest.json">
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./service-worker.js')
+          .then(() => console.log('Service Worker Registered'))
+          .catch((err) => console.error('Service Worker Registration Failed:', err));
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="https://www.instagram.com/tech.nap/">Anukasif</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://technap.netlify.app/form/contact-about#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://technap.netlify.app/form/contact-about#contact-me">Contact me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://anukasif.netlify.app/">Project with Code</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://bca-1st-sem-vvi-questions.netlify.app/">BCA VVI Questions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://bcamcq.netlify.app/">BCA MCQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5 pt-5">
+      <h1 class="text-center text-primary mb-3">Note App</h1>
+      <p class="text-center text-muted mb-4">Double click on a note to remove it</p>
+      <div class="app d-flex flex-column align-items-center" id="app">
+        <!-- Button to Add Notes -->
+        <button class="btn btn-success btn-lg mb-3" id="btn">+</button>
+        <!-- Notes will be dynamically added here -->
+      </div>
+    </div>
+
+ <!-- Footer Section start..... -->
+
+  <footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>About Us🪴</h2>
+            <p>We provide comprehensive study materials for BCA students, including notes, MCQs, and modules to help you excel in your studies.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Links🔗</h2>
+            <ul>
+                <li><a href="https://technap.netlify.app/form/contact-about#about-me">About Me</a></li>
+                <li><a href="https://technap.netlify.app/form/contact-about#contact-me">Contact Me</a></li>
+                <li><a href="https://bcaobj.netlify.app/">BCA Objectivs Q/A</a></li>
+                <li><a href="https://anukasif.netlify.app/">Projects with Source Code</a></li>
+                <li><a href="https://bcamcq.netlify.app/">BCA Multiple Choice Questions</a></li>
+                <li><a href="https://bca-1st-sem-vvi-questions.netlify.app/">BCA VVI Questions Answers for Exam</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social">
+            <h2>Follow Us🪭</h2>
+            <div class="social-links">
+                <a href="https://whatsapp.com/channel/0029VacDYEk1HsprIgadWg0l"><img src="assets/whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://www.instagram.com/tech.nap/"><img src="assets/instagram.png" alt="Instagram"></a>
+                <a href="https://t.me/tech_nap"><img src="assets/telegram.png" alt="Telegram"></a>
+                <a href="https://youtube.com/@tech_nap"><img src="assets/youtube.png" alt="YouTube"></a>
+                <a href="https://www.linkedin.com/in/anukasif/"><img src="assets/linkedin.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 TECH NAP. All rights reserved.</p>
+    </div>
+</footer>
+    
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
