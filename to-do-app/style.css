@@ -1,0 +1,100 @@
+/* body CSS */
+body {
+  margin: 0;
+  background-color: rgb(116, 45, 203);
+}
+header{
+  font-family: sans-serif;
+}
+header h1{
+  font-weight: 700;
+}
+/* Form styling */
+.form {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px; /* Make sure the form doesn't get too large */
+  background-color: rgb(7, 87, 13);
+  border-radius: 10px;
+  padding: 10px; /* Add padding inside the form */
+} 
+ 
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  border: 3px solid blue;
+  font-size: 20px;
+  font-family: Verdana;
+}
+
+.input::placeholder {
+  color: gray;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove default list bullets */
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background: #f4f4f4;
+  border-radius: 5px;
+}
+
+.list li.checked .fas.fa-check-square {
+  color: #8aeb8a; /* Change to green when checked */
+}
+
+.list li small {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+.list li.checked span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.fa-check-square {
+  margin-left: 10px;
+  color: green;
+  cursor: pointer;
+}
+
+.fa-trash {
+  margin-left: 10px;
+  color: red;
+  cursor: pointer;
+}
+.container{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+span{
+  font-weight: 700;
+  font-family: sans-serif;
+  color: blue;
+}
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 680px) {
+  .form {
+    width: 99%;
+  }
+}
+
